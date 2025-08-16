@@ -6,7 +6,7 @@ This is a minimal single-page landing for Honeymelon (character-driven clothing 
 - `css/styles.css` — styles
 - `js/script.js` — small interactive bits (modal, form mock)
 
-To view locally, open `index.html` in your browser or run a simple static server, e.g.: 
+To view locally, open `index.html` in your browser or run a simple static server, e.g.:
 
 ```bash
 python3 -m http.server 8000
