@@ -29,3 +29,5 @@ Next steps to complete deployment:
 If you want me to, I can:
 - update the workflow to build from a subfolder (if you later add a build step), or
 - switch to a different deploy action (Netlify, Vercel) and add environment variables.
+
+Note: updated workflow to use `peaceiris/actions-gh-pages` which publishes to a `gh-pages` branch to avoid deprecated artifact actions.
