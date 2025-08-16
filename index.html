@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Honeymelon — Character-driven clothing for tweens</title>
+  <meta name="description" content="Honeymelon: boutique, character-driven clothing inspired by YouTube gaming and manga for 7–15 year olds. Explore characters, product journeys, and join the community." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Honeymelon</a>
+      <nav class="nav">
+        <a href="#gallery">Characters</a>
+        <a href="#journeys">Product Journeys</a>
+        <a href="#community">Community</a>
+      </nav>
+      <a class="cta" href="#community">Join</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Clothes with character — inspired by YouTube gamers & manga</h1>
+          <p class="lead">Honeymelon blends gamer energy with kawaii manga vibes to make bold, character-driven apparel for 7–15 year olds. Shop drops, follow character stories, and join the squad.</p>
+          <p class="meta">New drop: "Pixel Petals" — limited edition tees and hoodies.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#gallery">Explore Characters</a>
+            <a class="btn ghost" href="#journeys">See Journeys</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <!-- Simple SVG character art placeholder -->
+          <svg viewBox="0 0 300 300" class="character-art" aria-hidden="true">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0" stop-color="#ff9a9e"/>
+                <stop offset="1" stop-color="#fad0c4"/>
+              </linearGradient>
+            </defs>
+            <rect width="100%" height="100%" rx="20" fill="url(#g1)" />
+            <g transform="translate(50,45)" fill="#222">
+              <circle cx="70" cy="55" r="45" fill="#fff" />
+              <path d="M30 100 q40 35 80 0" stroke="#222" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <circle cx="55" cy="45" r="6" fill="#222"/>
+              <circle cx="85" cy="45" r="6" fill="#222"/>
+              <path d="M45 20 q25 -25 50 0" stroke="#222" stroke-width="4" fill="none" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h2>Character Gallery</h2>
+        <p class="section-sub">Meet the faces that inspire collections — each character has a style, backstory, and merch.</p>
+        <div class="cards">
+          <!-- Character cards -->
+          <article class="card" data-name="Kitsu">
+            <div class="avatar">
+              <svg viewBox="0 0 100 100" class="avatar-svg"><circle cx="50" cy="50" r="48" fill="#fff"/></svg>
+            </div>
+            <h3>Kitsu</h3>
+            <p class="small">Retro gamer energy with neon trims.</p>
+            <button class="btn small view" data-character="Kitsu">View</button>
+          </article>
+
+          <article class="card" data-name="Momo">
+            <div class="avatar"><svg viewBox="0 0 100 100" class="avatar-svg"><rect x="4" y="4" width="92" height="92" rx="12" fill="#fff"/></svg></div>
+            <h3>Momo</h3>
+            <p class="small">Kawaii manga vibes, pastel palettes.</p>
+            <button class="btn small view" data-character="Momo">View</button>
+          </article>
+
+          <article class="card" data-name="Kyro">
+            <div class="avatar"><svg viewBox="0 0 100 100" class="avatar-svg"><polygon points="50,6 90,94 10,94" fill="#fff"/></svg></div>
+            <h3>Kyro</h3>
+            <p class="small">Speedrunner style and bold prints.</p>
+            <button class="btn small view" data-character="Kyro">View</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="journeys" class="section journeys">
+      <div class="container">
+        <h2>Product Journeys</h2>
+        <p class="section-sub">See how an idea becomes a tee — sketches, tests, and the final drop.</p>
+        <ol class="timeline">
+          <li>
+            <strong>Concept</strong>
+            <p>Character sketch and moodboard inspired by current YouTube trends.</p>
+          </li>
+          <li>
+            <strong>Prototype</strong>
+            <p>Sample prints, fabric checks, and sizing for kids 7–15.</p>
+          </li>
+          <li>
+            <strong>Drop</strong>
+            <p>Limited drop with community feedback and remix contests.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="community" class="section community">
+      <div class="container community-grid">
+        <div>
+          <h2>Join the Honeymelon Community</h2>
+          <p>Share fan-art, vote on upcoming characters, and enter monthly design challenges — made for 7–15s and moderated for safety.</p>
+          <ul class="features">
+            <li>Kid-friendly forums & moderated chats</li>
+            <li>Design contests with prizes</li>
+            <li>Early access to drops</li>
+          </ul>
+        </div>
+        <div class="signup">
+          <form id="signupForm" class="signup-form" aria-label="Join Honeymelon">
+            <label for="email">Parent or guardian email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            <button class="btn primary" type="submit">Get updates</button>
+            <p class="tiny">We never share data. Accounts for kids are parent-managed.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Honeymelon — Character-driven apparel for 7–15s</p>
+      <nav class="footer-nav"><a href="#privacy">Privacy</a> <a href="#terms">Terms</a></nav>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Character details">
+      <button class="close" aria-label="Close">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
